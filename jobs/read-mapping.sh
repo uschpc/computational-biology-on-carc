@@ -5,9 +5,9 @@
 #SBATCH --time 01:00:00
 #SBATCH --mem 4g
 #SBATCH --account=ttrojan_001
-#SBATCH --chdir /home1/ttrojan/workshop-bioresources
+#SBATCH --chdir /home1/ttrojan/computational-biology-on-carc
 module purge
-module load gcc/9.2.0
+module load gcc
 module load bowtie2
 module load samtools
 module load bedtools2

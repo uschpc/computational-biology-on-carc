@@ -4,9 +4,9 @@
 #SBATCH --partition debug
 #SBATCH --time=00:05:00
 #SBATCH --account=ttrojan_001
-#SBATCH --chdir /home1/ttrojan/workshop-bioresources
+#SBATCH --chdir /home1/ttrojan/computational-biology-on-carc
 module purge
-module load gcc/9.2.0
+module load gcc
 module load blast-plus
 echo “Example blast start”
 sleep 20

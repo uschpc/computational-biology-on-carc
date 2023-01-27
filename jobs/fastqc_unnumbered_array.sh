@@ -5,10 +5,10 @@
 #SBATCH --time=00:05:00
 #SBATCH --array=1-6
 #SBATCH --account=ttrojan_001
-#SBATCH --chdir /home1/ttrojan/workshop-bioresources
+#SBATCH --chdir /home1/ttrojan/computational-biology-on-carc
 
 module purge
-module load gcc/9.2.0
+module load gcc
 module load fastqc
 sleep 20
 

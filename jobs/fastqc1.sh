@@ -6,7 +6,7 @@
 #SBATCH --account=ttrojan_001
 #SBATCH --chdir /home1/ttrojan/computational-biology-on-carc
 module purge
-module load gcc
+module load usc
 module load fastqc
 echo “Example FastQC start”
 sleep 20

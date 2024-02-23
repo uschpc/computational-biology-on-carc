@@ -16,7 +16,7 @@ cp data/R*.gz results/read-mapping
 #unpack sample data
 gunzip results/read-mapping/R1.fastq.gz
 gunzip results/read-mapping/R2.fastq.gz
-#copy chromosome of interest
+#link the chromosome sequence locally for easy access
 ln -s /project/biodb/genomes/Homo_sapiens/UCSC/hg19/Sequence/Chromosomes/chr21.fa results/read-mapping/
 #prepare the bowtie2 index
 bowtie2-build --threads $SLURM_NTASKS results/read-mapping/chr21.fa results/read-mapping/chr21index
